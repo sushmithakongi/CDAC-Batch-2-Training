@@ -5,3 +5,5 @@ sum=num1+num2
 print("The sum is: ",sum)
 
 print("goodbye")
+
+print("thank you")
