@@ -1,5 +1,3 @@
-import javax.swing.plaf.synth.SynthStyleFactory;
-
 public class Sum {
 
     public static void main(String[] args) {
