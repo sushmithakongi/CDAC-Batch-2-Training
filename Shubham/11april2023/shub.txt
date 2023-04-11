@@ -1,5 +1,11 @@
 conflict
 
 first 1
+<<<<<<< HEAD
 
 third 3
+=======
+second 2
+
+fourth 4
+>>>>>>> shub
