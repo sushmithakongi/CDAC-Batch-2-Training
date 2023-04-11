@@ -2,3 +2,5 @@ conflict
 
 first 1
 second 2
+
+fourth 4
