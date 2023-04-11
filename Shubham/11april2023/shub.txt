@@ -1,0 +1,8 @@
+conflict
+
+first 1
+
+third 3
+second 2
+
+fourth 4
