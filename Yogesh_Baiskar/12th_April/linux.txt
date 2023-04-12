@@ -1,0 +1,9 @@
+linux command used
+
+pwd (Prints the working directory)
+cat (Prints file contents)
+cp (Copies files and directories)
+mv (Moves and renames files and directories)
+rm (Remove files and directories)
+touch (Creates empty files)
+mkdir (Creates directories)a
