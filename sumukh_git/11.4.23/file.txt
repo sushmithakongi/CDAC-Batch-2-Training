@@ -1,0 +1,1 @@
+this is the text common to both the files and merge conflict resolved.
