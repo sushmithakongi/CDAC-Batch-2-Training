@@ -1,0 +1,5 @@
+This id the file for conflict resolution
+
+First Line
+
+Second Line
