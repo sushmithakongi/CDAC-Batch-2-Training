@@ -1,0 +1,7 @@
+Basic commands
+whoami
+pwd 
+mkdir
+cat
+touch 
+rm
