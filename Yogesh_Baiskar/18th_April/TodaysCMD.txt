@@ -1,0 +1,140 @@
+    1  pwd
+    2  sudo su
+    3  exit
+    4  pwd
+    5  pwd
+    6  whoami
+    7  wsl -l -v
+    8  clear
+    9  pwd
+   10  ls
+   11  cat linux.txt 
+   12  touch hello.java
+   13  ls
+   14  ls -a
+   15  whoami
+   16  cd /mnt/
+   17  cls
+   18  clear
+   19  cd c/Users/lenovo/Desktop/
+   20  cd Infobell_Training/CDAC-Batch-2-Training/Yogesh_Baiskar/
+   21  ls
+   22  clear
+   23  nslookup
+   24  exit
+   25  clear
+   26  nslookup --help
+   27  clear
+   28  sed --help
+   29  clear
+   30  sed
+   31  clear
+   32  sudo ufw status
+   33  sudo hostname
+   34  sudo ufw enable
+   35  lsof -u yjb
+   36  cat /etc/passwd | cut -d: -f1
+   37  clear
+   38  history
+   39  history > TodaysCmd.txt
+   40  ls
+   41  cat TodaysCmd.txt 
+   42  clear
+   43  history > TodaysCmd.txt
+   44  cat TodaysCmd.txt 
+   45  cls
+   46  clear
+   47  top
+   48  clear
+   49  top -u tecmint
+   50  top -u yogesh
+   51  cls
+   52  clear
+   53  top -u yogesh
+   54  cls
+   55  clear
+   56  ls
+   57  clear
+   58  ls
+   59  pwd
+   60  mkdir folder1
+   61  cd folder1/
+   62  cd ..
+   63  rm folder1/
+   64  rm -r folder1/
+   65  clear
+   66  cp file_to_copy.txt new_file.txt
+   67  clear
+   68  touch new.txt
+   69  rm new.txt 
+   70  touch new1.txt
+   71  mv command_list.txt commands/
+   72  clear
+   73  mkdir images/
+   74  mkdir -p movies/2004/
+   75  man mkdir
+   76  man man
+   77  touch -m old_file
+   78  touch new_file_name
+   79  ls
+   80  tree ../17th_April/
+   81  htop
+   82  echo "Cool message"
+   83  pwd
+   84  ls
+   85  mkdir 18th_April
+   86  ls -l
+   87  cd 18th_April/
+   88  pwd
+   89  ls -l
+   90  touch demo.java
+   91  ls
+   92  cat demo.txt
+   93  cat > demo.txt
+   94  ls
+   95  cat demo.txt 
+   96  grep yogesh demo.txt 
+   97  grep Yogesh demo.txt 
+   98  grep -i Yogesh demo.txt 
+   99  find ../13th_April/ -name *.txt
+  100  diff demo.txt  demo.java 
+  101  vi demo.java 
+  102  cat demo.java 
+  103  diff demo.txt  demo.java 
+  104  cat >> demo.txt 
+  105  diff demo.txt  demo.java 
+  106* demo.java
+  107  cls
+  108  clear
+  109  tail demo.java 
+  110  tail -2 demo.java 
+  111  tail -3 demo.java 
+  112  hostname
+  113  cat demo.java >> demo.txt comibined.txt
+  114  cat combined.txt demo.java >> demo.txt
+  115  cat combined.txt demo.java >demo.txt
+  116  chmod -000 demo.java 
+  117  ls -l
+  118  chmod -711 demo.java 
+  119  ls -l
+  120  chmod -111 demo.java 
+  121  ls -l
+  122  chmod 111 demo.java 
+  123  ls -l
+  124  chmod 777 demo.java 
+  125  ls -l
+  126  clear
+  127  awk 'print{$2}' demo.java 
+  128  awk '{print $2}' demo.java 
+  129  awk '{print $1}' demo.java 
+  130  tar -xvf archieve.tar
+  131  tar -xvf archieve.tar demo.java
+  132  pwd
+  133  sudo apt install tree
+  134  pwd
+  135  clear
+  136  tree ../18th_April/
+  137  history
+  138  clear
+  139  histrory > TodaysCMD.txt
+  140  history > TodaysCMD.txt
