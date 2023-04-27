@@ -1,0 +1,24 @@
+version: "3.8"
+services:
+  new-app-compose:
+   container_name: spring-boot-app-for-commpose
+   image: spring-compose-image
+   restart: always
+   build: .
+   ports:
+    - 9095:8080
+   environment:
+    MYSQL_HOST: new_mysql_db
+    MYSQL_USER: root
+    MYSQL_PASSWORD: sept22
+    MYSQL_PORT: 3306
+   
+   
+  database:
+   container_name: new_mysql_db
+   image: mysql
+   ports:
+    - 3309:3306
+   environment:
+    MYSQL_DATABASE: test
+    MYSQL_ROOT_PASSWORD: sept22
