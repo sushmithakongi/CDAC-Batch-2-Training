@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysqldb
+  labels:
+    app: mysqldb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysqldb
+  template:
+    metadata:
+      labels:
+        app: mysqldb
+    spec:
+      containers:
+      - name: mysqldb
+        image: omkar0707/spring:mysqltag
+        imagePullPolicy: IfNotPresent
+        ports:
+        - name: mysql-port
+          containerPort: 3306
+        volumeMounts:
+        - name: mysql-volume
+          mountPath: /var/lib/mysql
+        env:
+        - name: MYSQL_DATABASE
+          value: Infobell
+        - name: MYSQL_PASSWORD
+          value: "Omkar@0707"
+        - name: MYSQL_ROOT_PASSWORD
+          value: "1234"
+      volumes:
+      - name: mysql-volume
+        persistentVolumeClaim:
+          claimName: mysql-pvc
