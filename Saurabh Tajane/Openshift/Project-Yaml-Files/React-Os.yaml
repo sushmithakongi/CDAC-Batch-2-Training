@@ -1,0 +1,43 @@
+---
+#deployment file
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-app
+  labels:
+    app: react-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: react-app
+  template:
+    metadata:
+      labels:
+        app: react-app
+    spec:
+      containers:
+      - name: react-app
+        image: saurabh7nt/student-web-app-react-v2
+        ports:
+        - containerPort: 3000
+        env:
+            - name: REACT_APP_API_URL
+              value: http://spring-app-service-saurabh7nt-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/student
+
+---
+#service file
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: react-app-service
+spec:
+  selector:
+    app: react-app
+  ports:
+  - name: http
+    port: 80
+    targetPort: 3000
+  type: NodePort

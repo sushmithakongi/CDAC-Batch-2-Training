@@ -1,0 +1,12 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: mysqldb-route
+spec:
+  to:
+    kind: Service
+    name: mysqldb-service
+  port:
+    targetPort: mysql
+  tls:
+    termination: edge
