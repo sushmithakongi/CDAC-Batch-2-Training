@@ -1,0 +1,53 @@
+---
+#deployment file
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-app
+  template:
+    metadata:
+      labels:
+        app: spring-app
+    spec:
+      containers:
+        - name: springapp
+          image: saurabh7nt/student-web-app-spring
+          ports:
+            - containerPort: 8081
+          env:
+            - name: MYSQL_HOST
+              value: mysqldb            
+            - name: MYSQL_USER
+              value: root
+            - name: MYSQL_PASSWORD
+              value: root
+            - name: MYSQL_PORT
+              value: "3306"
+          volumeMounts:
+            - name: mysql-volume
+              mountPath: /var/lib/mysql
+      volumes:
+        - name: mysql-volume
+
+---
+#service file
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: spring-app-service
+spec:
+  selector:
+    app: spring-app
+  ports:
+    - name: http
+      port: 8081
+      targetPort: 8081
+      nodePort: 30002   
+  type: NodePort
